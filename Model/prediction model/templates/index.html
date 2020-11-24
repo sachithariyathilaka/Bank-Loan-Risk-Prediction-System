@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Loan Risk Prediction System</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+ <div class="container">
+     <div class="row">
+         <div class="col-md-3"></div>
+         <div class="col-md-6" id="template" style="margin-top: 100px; margin-bottom: 200px">
+             <div class="login">
+                 <h1 style="margin-bottom: 50px; margin-top: 30px">Risk Prediction</h1>
+             </div>
+             <div>
+                 <form action="{{ url_for('predict')}}"method="post">
+                     <div class="input-group">
+                     <input type="text" class="form-control data"  name="nic" placeholder="NIC" required="required" />
+                 </div>
+                     <br>
+                     <p style="text-align: center">{{ prediction_text }}</p>
+                     <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
+</body>
+</html>

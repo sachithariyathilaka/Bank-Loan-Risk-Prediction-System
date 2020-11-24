@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a85e948d-3696-47a9-b0c0-aff43264237c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1V6Q6mObalyEqLeFEMLz150o9ME" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/search-sort-and-pagination-angularjs-master" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\Design project\Implementation\Front End\Bank Application -UI\lib" />
+      <recent name="E:\Projects\Design project\Implementation\Bank Application -UI\Images" />
+      <recent name="E:\Projects\Design project\Implementation\Bank Application -UI\lib" />
+      <recent name="E:\Projects\Design project\Implementation\Bank Application -UI\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="Unnamed" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Bank Application -UI/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.Unnamed" />
+      <item itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a85e948d-3696-47a9-b0c0-aff43264237c" name="Default Changelist" comment="" />
+      <created>1576570892151</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576570892151</updated>
+      <workItem from="1576570894804" duration="1362000" />
+      <workItem from="1576572454086" duration="45000" />
+      <workItem from="1576656954364" duration="7914000" />
+      <workItem from="1576814693931" duration="66000" />
+      <workItem from="1576827050704" duration="10435000" />
+      <workItem from="1577701694260" duration="4609000" />
+      <workItem from="1577769840991" duration="26000" />
+      <workItem from="1577771057749" duration="6260000" />
+      <workItem from="1577854320475" duration="17278000" />
+      <workItem from="1577937696362" duration="5246000" />
+      <workItem from="1577963180949" duration="4667000" />
+      <workItem from="1578026341485" duration="2760000" />
+      <workItem from="1578045738038" duration="2418000" />
+      <workItem from="1578287758467" duration="73000" />
+      <workItem from="1578294627646" duration="1196000" />
+      <workItem from="1578542810946" duration="6857000" />
+      <workItem from="1578911324794" duration="5151000" />
+      <workItem from="1580361300060" duration="3596000" />
+      <workItem from="1580374760186" duration="9088000" />
+      <workItem from="1580880032205" duration="12917000" />
+      <workItem from="1580962123146" duration="3583000" />
+      <workItem from="1580983609571" duration="5763000" />
+      <workItem from="1581051837103" duration="2658000" />
+      <workItem from="1581421117652" duration="1647000" />
+      <workItem from="1582714888675" duration="2045000" />
+      <workItem from="1594616913784" duration="625000" />
+      <workItem from="1594715999143" duration="1707000" />
+      <workItem from="1594799885034" duration="26174000" />
+      <workItem from="1594894070744" duration="8632000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1780" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576571099942">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1780" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1576571099942" />
+    <state x="2106" y="294" key="FileChooserDialogImpl" timestamp="1578911423042">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2106" y="294" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578911423042" />
+  </component>
+</project>

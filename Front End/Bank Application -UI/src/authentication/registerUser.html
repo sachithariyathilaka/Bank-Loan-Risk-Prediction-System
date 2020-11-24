@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" id="template" style="height: 530px; margin-top: 70px; margin-bottom: 20x;">
+            <div class="login">
+                <div class="spinner-border" style="width: 3rem; height: 3rem; margin-top: 5px; float: left;" role="status" ng-show="loader">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <h1 style="margin-bottom: 50px; margin-top: 30px">Register User</h1>
+            </div>
+            <form name="registerForm" novalidates>
+                <div class="input-group">
+                    <input type="text" class="form-control data"  placeholder="Full Name" name="name" ng-model="name" ng-required="true" />
+                </div>
+                <span class="error" ng-show="registerForm.name.$touched && registerForm.name.$invalid">Please Enter Name</span>
+                <div class="input-group">
+                    <input class="form-control data" type="text"  placeholder="NIC" name="nic" ng-model="nic" ng-required="true"/>
+                </div>
+                <span class="error" ng-show="registerForm.nic.$touched && registerForm.nic.$invalid">Please Enter NIC</span>
+                <div class="input-group">
+                    <select class="form-control data" style="height: 35px" ng-model="role">
+                        <option class="form-control data" style="color: black;" value="" selected disabled>-- Select Job Role --</option>
+                        <option class="form-control data" style="color: black" ng-repeat="role in roleList">{{role.jobRole}}</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control data" name="username" placeholder="Username" ng-model="username" ng-required="true">
+                </div>
+                <span class="error" ng-show="registerForm.username.$touched && registerForm.username.$invalid">Please Enter Username</span>
+                <div class="input-group">
+                    <input type="password" class="form-control data" name="password" placeholder="Password" ng-model="password" ng-required="true">
+                </div>
+                <span class="error" ng-show="registerForm.password.$touched && registerForm.password.$invalid">Please Enter Password</span><br>
+                <input type="button" class="btn btn-primary btn-block btn-large" id="login" ng-disabled="registerForm.$invalid" value="Register" ng-click="register()">
+                <input type="button" class="btn btn-primary btn-block btn-large" value="Back" id="login"  ng-click="back()">
+            </form>
+        </div>
+    </div>
+</div>

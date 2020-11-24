@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="margin-top: 50px">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="button" class="btn btn-primary btn-block btn-large" value="Back" id="addBtn"  ng-click="back()" style="margin-right: 270px; margin-top: -5px; width: 100px;">
+                    <input type="button" class="btn btn-primary btn-block btn-large" value="New Application" id="addBtn"  ng-click="newApplication()" style="margin-top: -5px; margin-right: 270px;">
+                    <input type="button" class="btn btn-primary btn-block btn-large" value="Export to Excel" id="addBtn"  ng-click="export()" style="margin-top: -5px;">
+                    <input type="text" ng-model="search" class="form-control data" id="searchBox" placeholder="Search Application">
+                </div>
+            </form>
+            <table id = "applications" class="table table-striped table-hover table-dark table-bordered" style="margin-left: -250px">
+                <tr>
+                    <th ng-click="sort('Id')">Id
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Id'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('NIC')">NIC
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='NIC'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Income')">Income
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Income'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('CoIncome')">Co-Income
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='CoIncome'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Amount')">Loan Amount
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Amount'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('CreditScore')">Credit Score
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='CreditScore'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Education')">Education Level
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Education'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Gender')">Gender
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Gender'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Prediction')">Eligibility Prediction
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Prediction'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th ng-click="sort('Status')">Loan Status
+                        <span class="glyphicon sort-icon" ng-show="sortKey=='Status'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                    </th>
+                    <th>Export</th>
+                </tr>
+                <tr dir-paginate="application in applications|orderBy:sortKey:reverse|filter:search|itemsPerPage:10">
+                    <td style="color: #4a77d4; text-decoration: underline" ng-click="putId(application.Id)">{{application.Id}}</td>
+                    <td>{{application.NIC}}</td>
+                    <td>{{application.Income}}</td>
+                    <td>{{application.CoIncome}}</td>
+                    <td>{{application.Amount}}</td>
+                    <td ng-if="application.CreditScore == 0">False</td>
+                    <td ng-if="application.CreditScore == 1">True</td>
+                    <td ng-if="application.Education == 0">Non-Graduate</td>
+                    <td ng-if="application.Education == 1">Graduate</td>
+                    <td ng-if="application.Gender == 0">Female</td>
+                    <td ng-if="application.Gender == 1">Male</td>
+                    <td ng-if="application.Prediction == 0">Not Eligible</td>
+                    <td ng-if="application.Prediction == 1">Eligible</td>
+                    <td ng-if="application.Prediction == 'Pending'">Pending</td>
+                    <td>{{application.Status}}</td>
+                    <td style="color: #4a77d4; text-decoration: underline" ng-click="makePdf(application.Id)">Export PDF</td>
+                </tr>
+            </table>
+            <dir-pagination-controls
+                    max-size="10"
+                    direction-links="true"
+                    boundary-links="true" >
+            </dir-pagination-controls>
+        </div>
+    </div>
+</div>

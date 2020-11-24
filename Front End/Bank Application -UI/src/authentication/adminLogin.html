@@ -1,0 +1,30 @@
+<div class="login">
+<h1>Bank Loan Risk Prediction System</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" id="template">
+            <div class="login">
+                <div class="spinner-border" style="width: 3rem; height: 3rem; float: left;" role="status" ng-show=loader>
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <h3 style="margin-bottom: 50px; margin-top: 30px; margin-right: 10px; text-align: center" id="auth">Admin Login</h3>
+            </div>
+            <form name="loginForm" novalidate>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="username" placeholder="Username" ng-model="username" ng-required="true">
+                    <img src="Images/user.svg" width="40px" height="38px">
+                </div>
+                <span class="error" ng-show="loginForm.username.$touched && loginForm.username.$invalid">Please Enter Your Username</span>
+                <div class="input-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password" ng-model="password" ng-required="true">
+                    <img src="Images/password.svg" width="40px" height="38px">
+                </div>
+                <span class="error" ng-show="loginForm.password.$touched && loginForm.password.$invalid">Please Enter Your Password</span><br>
+                <p class="text-center">Are You're Operator? <span class="link" ng-click="goToOperatorLogin()">Login here</span></p>
+                <input type="button" class="btn btn-primary btn-block btn-large" id="login" ng-isabled="loginForm.$invalid" value="Login" ng-click="adminLogin()">
+            </form>
+        </div>
+    </div>
+</div>

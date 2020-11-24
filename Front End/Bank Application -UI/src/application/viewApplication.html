@@ -1,0 +1,30 @@
+<div class="container" style="width: 1000px;">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" id="template" style="height: 700px; margin-top: 20px; margin-bottom: 20x;">
+            <div class="login">
+                <h1 style="margin-bottom: 50px; margin-top: 30px">View Application</h1>
+            </div>
+            <div class="viewData">
+                <p>Application Id : {{data[0].Id}}</p>
+                <p>Applicant NIC : {{data[0].NIC}}</p>
+                <p>Applicant Income : {{data[0].Income}}</p>
+                <p>Co-Applicant Income : {{data[0].CoIncome}}</p>
+                <p>Loan Amount : {{data[0].Amount}}</p>
+                <p ng-if ="data[0].CreditScore == 0">Credit Score : False</p>
+                <p ng-if ="data[0].CreditScore == 1">Credit Score : True</p>
+                <p ng-if ="data[0].Education == 0">Education : Non-Graduate</p>
+                <p ng-if ="data[0].Education == 1">Education : Graduate</p>
+                <p ng-if ="data[0].Gender == 0">Gender : Female</p>
+                <p ng-if ="data[0].Gender == 1">Gender : Male</p>
+                <p ng-if ="data[0].Prediction == 0">Eligibility Prediction : Not Eligible</p>
+                <p ng-if ="data[0].Prediction == 1">Eligibility Prediction : Eligible</p>
+                <p ng-if ="data[0].Prediction == 'Pending'">Eligibility Prediction : Pending</p>
+                <p>Loan Status : {{data[0].Status}}</p>
+                <a href="http://127.0.0.1:5000/" class="btn btn-primary btn-block btn-large" id="login">Predict</a>
+                <input type="button" class="btn btn-primary btn-block btn-large" value="Approve" id="login"  ng-click="Approve()" ng-hide="approveBtn">
+                <input type="button" class="btn btn-primary btn-block btn-large" value="Reject" id="login"  ng-click="Reject()" ng-hide="rejectBtn">
+            </div>
+        </div>
+    </div>
+</div>

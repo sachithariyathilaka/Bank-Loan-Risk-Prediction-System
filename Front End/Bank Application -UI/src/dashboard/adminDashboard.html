@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div class="d-flex" id="wrapper">
+    <div id="sidebar-wrapper">
+        <div class="sidebar-heading">Risk Predictor</div>
+        <div class="list-group list-group-flush">
+            <a href="" class="list-group-item list-group-item-action"><img src="./images/home.svg" id="icon"> <span class="menuText">Home</span></a>
+            <a href="" class="list-group-item list-group-item-action" ng-click="application()"><img src="./images/search.svg" id="icon"> <span class="menuText">Applications</span></a>
+            <a href="http://127.0.0.1:5000/" class="list-group-item list-group-item-action"><img src="./images/predict.svg" id="icon"> <span class="menuText">Prediction</span></a>
+            <a href="" class="list-group-item list-group-item-action" ng-click="addUser()"><img src="./images/add.svg" id="icon"> <span class="menuText">Users</span></a>
+            <a href="" class="list-group-item list-group-item-action" ng-click="logOut()"><img src="./images/out.svg" id="icon"> <span class="menuText">Log Out</span></a>
+        </div>
+    </div>
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-light transparent">
+            <button class="navbar-toggler" type="button" id="menu-toggle" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="login">
+            <h1>Welcome To The</h1>
+            <h1 style="margin-top: -10px">Bank Loan Risk Prediction System</h1>
+        </div>
+        <center>
+            <div class="login" id="help" style="margin-top: 50px;">
+            <img src="./images/help.svg" id="icon"><a href="https://youtu.be/J_IsWfeRsb4" target="_blank" class="menuText" style="color: white; text-decoration: none">Take Tour</a>
+        </div>
+        </center>
+    </div>
+</div>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+</body>
+</html>

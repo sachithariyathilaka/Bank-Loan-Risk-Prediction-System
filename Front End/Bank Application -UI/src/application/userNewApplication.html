@@ -1,0 +1,54 @@
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" id="template" style="height: 640px; margin-top: 20px; margin-bottom: 20px;">
+            <div class="login">
+                <div class="spinner-border" style="width: 3rem; height: 3rem; margin-top: 5px; float: left;" role="status" ng-show="loader">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <h1 style="margin-bottom: 50px; margin-top: 30px">New Loan Application</h1>
+            </div>
+            <form name="application" novalidates>
+                <div class="input-group">
+                    <input type="text" class="form-control data"  placeholder="NIC without X OR V" name="nic" ng-model="nic" ng-required="true" />
+                </div>
+                <span class="error" ng-show="application.nic.$touched && application.nic.$invalid">Please Enter NIC</span>
+                <div class="input-group">
+                    <input class="form-control data" type="text"  placeholder="Applicant Income" name="income" ng-model="income" ng-required="true"/>
+                </div>
+                <span class="error" ng-show="application.income.$touched && application.income.$invalid">Please Enter Applicant Income</span>
+                <div class="input-group">
+                    <input type="text" class="form-control data" name="co_income" placeholder="Co-applicant Income" ng-model="co_income" ng-required="true">
+                </div>
+                <span class="error" ng-show="application.co_income.$touched && application.co_income.$invalid">Please Enter Co-applicant Income</span>
+                <div class="input-group">
+                    <input type="text" class="form-control data" name="amount" placeholder="Loan Amount" ng-model="amount" ng-required="true">
+                </div>
+                <span class="error" ng-show="application.amount.$touched && application.amount.$invalid">Please Enter Loan Amount</span>
+                <div class="input-group">
+                    <select class="form-control data" style="height: 35px" ng-model="credit">
+                        <option class="form-control data" style="color: black;" value="" selected disabled>-- Select Credit Score --</option>
+                        <option class="form-control data" style="color: black" ng-repeat="credit in creditList">{{credit.score}}</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <select class="form-control data" style="height: 35px" ng-model="gender">
+                        <option class="form-control data" style="color: black;" value="" selected disabled>-- Select Male(1) OR Female(0) --</option>
+                        <option class="form-control data" style="color: black" ng-repeat="credit in creditList">{{credit.score}}</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <select class="form-control data" style="height: 35px" ng-model="education">
+                        <option class="form-control data" style="color: black;" value="" selected disabled>-- Select Graduate(1) OR Non-Graduate(0) --</option>
+                        <option class="form-control data" style="color: black" ng-repeat="credit in creditList">{{credit.score}}</option>
+                    </select>
+                </div>
+                <br>
+                <input type="button" class="btn btn-primary btn-block btn-large" id="login" ng-disabled="application.$invalid" value="Add Application" ng-click="addApplication()">
+                <input type="button" class="btn btn-primary btn-block btn-large" value="Back" id="login"  ng-click="back()">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
